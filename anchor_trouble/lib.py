@@ -4,6 +4,7 @@
 
 class GasStation(object):
     """Gast Station"""
+
     def __init__(self, matrix):
         self.matrix = matrix  # string array
         self.data = []  # list of lines of formatted string array
