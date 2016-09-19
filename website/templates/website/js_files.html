@@ -10,3 +10,28 @@
 <script src="{% static 'website/js/contact_me.js' %}"></script>
 <!-- Theme JavaScript -->
 <script src="{% static 'website/js/freelancer.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.blockUI.js' %}"></script>
+
+<script>
+    function block(msg){
+        if (msg == undefined) {
+            msg = 'Wait...'
+        }
+        $.blockUI({
+            message: '<div><h2>' + msg + '</h2></div>',
+            css: {
+                border: 'none',
+                padding: '15px',
+                backgroundColor: '#EEEEEE',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                color: '#A3081E',
+                'font-size': '20px'
+            }
+        });
+    };
+    function unBlock(){
+        $.unblockUI();
+    }
+
+</script>
