@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'j*s@rh!)sc57id7gzhslxk#yoj&u#2y-#um$2m_f#j$pek&o2z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'website.apps.WebsiteConfig'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -118,4 +119,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/anchorloans/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'anchor_trouble', 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'anchor_trouble', 'media')
