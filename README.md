@@ -1,16 +1,19 @@
 # Anchon Loans selective process
 
+### Introduction to the problems
+
+* The resolution must be a web application.
+* There must be a way to supply the application with the input data via text file that will be uploaded.
+* The application must run.
+* The code needs to be hosted in your GitHub account.
+* You need to host the application in a server of your choice and give us a link to access and use the application.
+* You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the supplied.
+
 ### Demonstration
 
 * Download [data.txt](https://raw.githubusercontent.com/christianalcantara/anchor_trouble/master/data.txt).
-
 * [Click here](http://146.148.56.51/anchorloans#problem) to acces site demonstration.
-
 * Select data.txt file and click in submit button.
-
-
-
-
 
 ### VPS
 
@@ -28,6 +31,7 @@
                        SQLite 3.7.15.1
                        Subversion 1.9.4
 ```
+
 ### Download project
 
 **Option 01** Clone repository
