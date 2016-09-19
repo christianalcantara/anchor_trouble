@@ -8,7 +8,6 @@ def index(request):
         form = SendFileForm(request, request.FILES)
         if form.is_valid():
             data = form.gas_station
-            print '>>>>>>>>>', data
             ctx.update({'data': data})
     else:
         form = SendFileForm()
